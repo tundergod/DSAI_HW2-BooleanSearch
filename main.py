@@ -9,7 +9,6 @@ def booleanSearch(data, query):
     dic = createDic(query)
     data = segData(data, dic)
     
-    
     for i in query:
         if ' and ' in i:
             tmp = []
@@ -51,6 +50,7 @@ def booleanSearch(data, query):
             ans.append(tmp)
     return ans
 
+# segment data using dictionary
 def segData(data, dic):
     seg = []
     tmp = []
@@ -65,6 +65,7 @@ def segData(data, dic):
         
     return seg
 
+# create dictionary base on query
 def createDic(query):
     dic = []
     for i in query:
