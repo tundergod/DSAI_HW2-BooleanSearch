@@ -1,4 +1,4 @@
-# DSAI HW1-AutoTrading
+# DSAI HW2-BooleanSearch
 
 ## Test Environment
 - Programming Language: Python 3.5.2 (pip3 distribution)
