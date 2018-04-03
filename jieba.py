@@ -2,9 +2,6 @@
 # -*- coding: UTF-8 -*-
 
 import jieba_fast as jieba
-import time
-
-start_time = time.time()
 
 def loadData(data):
     data = open(data).read().splitlines()
@@ -28,8 +25,6 @@ def wordSegment(data, numH):
             )
         ]
 
-        if i == 23238:
-            print(words)    
         hashTable = buildHashTable(words, i, numH, hashTable)
     return hashTable
 
@@ -154,4 +149,3 @@ if __name__ == '__main__':
     # load query and execute boolean search
     query = loadData(args.query)
     booleanSearch(query, numH, hashTable, data)
-    print("--- %s seconds ---" % (time.time() - start_time))

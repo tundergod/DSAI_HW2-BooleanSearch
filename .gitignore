@@ -1,7 +1,6 @@
 # dataset
 *.csv
-*.txt
-jieba/
+query.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
